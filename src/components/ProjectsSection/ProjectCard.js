@@ -15,7 +15,7 @@ export default function Project(props) {
 
     return(
         <div className="project-card">
-            <h4>{props.project.name}</h4>
+            <h5>{props.project.name}</h5>
             <div className="tech-tag-list">
                 {techStackElements}
             </div>

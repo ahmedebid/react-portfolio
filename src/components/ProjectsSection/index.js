@@ -1,5 +1,5 @@
 import ProjectCard from "./ProjectCard";
-import projectData from "../../data";
+import { projectData } from "../../data";
 import { nanoid } from "nanoid";
 
 const projectCards = projectData.map(project => 

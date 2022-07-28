@@ -41,7 +41,6 @@ body {
   min-height: 100vh;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
-  padding: 90px;
   font-family: 'Poppins', sans-serif;
   font-weight: 500;
 }
@@ -92,23 +91,38 @@ select {
 h1 {
   font-family: 'Bangers', cursive;
   font-weight: 400;
+  font-size: 50px;
 }
 
 h2 {
   font-size: 92px;
   line-height: 82px;
+  margin-bottom: 20px;
 }
 
 h3 {
   font-family: 'Nunito', sans-serif;
   font-weight: 600;
   font-size: 44px;
+  text-decoration: underline wavy #F43F5E;
+  text-underline-offset: 8px;
 }
 
 h4 {
+  font-size: 52px;
+  font-weight: 500;
+}
+
+h5 {
   font-size: 38px;
   line-height: 1;
   font-weight: 500;
+}
+
+h6 {
+  font-weight: 500;
+  font-size: 28px;
+  margin: 0;
 }
 
 /* Header */
@@ -117,6 +131,18 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin: 20px 90px;
+}
+
+nav {
+  display: flex;
+  gap: 50px;
+}
+
+nav a {
+  text-decoration: none;
+  color: inherit;
+  font-size: 20px;
 }
 
 /* Hero Section */
@@ -130,13 +156,20 @@ header {
     background: linear-gradient(99.03deg, #FBED96 -1%, #ABECD6 92.31%);
     box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1), 0px 23px 30px rgba(171, 236, 214, 0.2);
     border-radius: 44px;
-    padding: 38px 130px;
+    padding: 38px 95px;
+    margin-inline: 90px;
+}
+
+.hello-phrase {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .hero-section p {
-  font-size: 60px;
+  font-size: 55px;
   line-height: 71.16px;
-  margin-top: 10px;
+  margin-top: 20px;
   margin-bottom: 42px;
 }
 
@@ -167,6 +200,7 @@ header {
 
 .projects-section {
   margin-block: 40px;
+  margin-inline: 90px;
 }
 
 .projects-list {
@@ -222,4 +256,93 @@ header {
 .project-links a {
   text-decoration: none;
   color: inherit;
+}
+
+/* About Me Section */
+
+.about-me-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+  margin-inline: 90px;
+}
+
+.about-me-section p {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 400;
+}
+
+.about-me-details {
+  width: 50%;
+}
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+
+.skill {
+  width: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 12px;
+  gap: 25px;
+}
+
+.skill-logo {
+  width: 125px;
+  height: 125px;
+  box-shadow: 0px 9.12096px 9.12096px rgba(8, 163, 230, 0.1), 0px 9.12096px 9.12096px rgba(7, 126, 218, 0.2);
+  border-radius: 40px;
+}
+
+/* Footer */
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #111827;
+  color: #fff;
+  padding: 90px;
+  border-radius: 48px 48px 0px 0px;
+}
+
+footer p {
+  font-size: 28px;
+  font-weight: 400;
+  padding: 0;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.catchy-phrase {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+address a {
+  font-size: 28px;
+  color: inherit;
+  font-style: normal;
+}
+
+.social-icon {
+  font-size: 60px;
+}
+
+.social-icons-container {
+  display: flex;
+  gap: 50px;
+  margin-top: 30px;
 }
