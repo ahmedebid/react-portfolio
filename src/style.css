@@ -87,17 +87,36 @@ select {
 /* Styles                                       */
 /* -------------------------------------------- */
 
+/* General */
+
+h1 {
+  font-family: 'Bangers', cursive;
+  font-weight: 400;
+}
+
+h2 {
+  font-size: 92px;
+  line-height: 82px;
+}
+
+h3 {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 600;
+  font-size: 44px;
+}
+
+h4 {
+  font-size: 38px;
+  line-height: 1;
+  font-weight: 500;
+}
+
 /* Header */
 
 header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-}
-
-header h1 {
-  font-family: 'Bangers', cursive;
-  font-weight: 400;
 }
 
 /* Hero Section */
@@ -112,12 +131,6 @@ header h1 {
     box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1), 0px 23px 30px rgba(171, 236, 214, 0.2);
     border-radius: 44px;
     padding: 38px 130px;
-}
-
-.hero-section h2 {
-  font-family: 'Nunito', sans-serif;
-  font-weight: 600;
-  font-size: 44px;
 }
 
 .hero-section p {
@@ -148,4 +161,65 @@ header h1 {
   cursor: pointer;
   border: none;
   margin-right: 16px;
+}
+
+/* Projects Section */
+
+.projects-section {
+  margin-block: 40px;
+}
+
+.projects-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 350px;
+  border: 1px solid #000;
+  margin-top: 30px;
+  padding: 15px;
+  border-radius: 18px;
+  gap: 20px;
+}
+
+.tech-tag {
+  padding: 8px 16px;
+  border-radius: 32px;
+  font-weight: 400;
+  color: #fff;
+}
+
+.tech-tag-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.project-SS {
+  background: #E23839;
+  border-radius: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.project-SS img {
+  border-radius: 18px;
+}
+
+.project-links {
+  display: flex;
+  gap: 20px;
+}
+
+.project-links a {
+  text-decoration: none;
+  color: inherit;
 }
