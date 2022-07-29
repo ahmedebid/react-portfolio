@@ -11,7 +11,7 @@ const projectCards = projectData.map(project =>
 
 export default function ProjectsSection() {
     return(
-        <section className="projects-section">
+        <section id="projects-sec" className="projects-section">
             <h2>Latest Projects</h2>
             <div className="projects-list">
                 {projectCards}

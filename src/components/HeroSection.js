@@ -1,7 +1,7 @@
 export default function HeroSection() {
     return(
         <section className="hero-section">
-            <img src="memoji-round.png" alt="Memoji face"/>
+            <img className="memoji-hero" src="memoji-hero.png" alt="Memoji working on a laptop"/>
             <div className="hello-phrase">
                 <h3>Hi, I'm Ahmed Ebid</h3>
                 <img src="waving-hand.png" alt="Waving Hand" width="70" height="70"/>

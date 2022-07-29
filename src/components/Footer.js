@@ -3,7 +3,7 @@ import { faLinkedin, faSquareGithub, faSquareTwitter } from "@fortawesome/free-b
 
 export default function Footer() {
     return(
-        <footer>
+        <footer id="contact-sec">
             <div className="contact-info">
                 <h2>Contact Me</h2>
                 <p>Do you have an idea in mind?</p>
@@ -28,7 +28,7 @@ export default function Footer() {
             </div>
 
             <div className="contact-form">
-                <p>[contact form goes here]</p>
+                <img className="memoji-footer" src="memoji-footer.png" alt="Memoji doing 'call me' gesture" />
             </div>
         </footer>
     );
