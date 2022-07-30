@@ -10,8 +10,8 @@ export default function HeroSection() {
                 I'm a <span>front-end engineer</span> who builds responsive, accessible, and performant user experiences on the web.
             </p>
             <div className="hero-buttons">
-                <button className="hero-contact-btn">Contact</button>
-                <button className="hero-cv-btn">Download résumé →</button>
+                <button onClick={() => document.getElementById("contact-sec").scrollIntoView()} className="hero-contact-btn">Contact</button>
+                <a className="hero-cv-btn" href=".">Download résumé →</a>
             </div>
         </section>
     );

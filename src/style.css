@@ -111,6 +111,7 @@ h3 {
 h4 {
   font-size: 52px;
   font-weight: 500;
+  margin-top: 50px;
 }
 
 h5 {
@@ -225,11 +226,14 @@ nav a {
   -webkit-text-fill-color: transparent;
 }
 
+.hero-buttons {
+  display: flex;
+  align-items: center;
+}
+
 .hero-cv-btn {
-  background-color: transparent;
-  border: none;
-  cursor: pointer;
-  padding: 0;
+  text-decoration: none;
+  color: inherit;
 }
 
 .hero-contact-btn {
@@ -312,28 +316,30 @@ nav a {
 .about-me-section {
   display: flex;
   /* justify-content: space-between; */
-  align-items: center;
+  /* align-items: center; */
   flex-wrap: wrap;
   margin-bottom: 40px;
   margin-inline: 90px;
+  gap: 50px;
 }
 
 .about-me-section p {
   font-family: 'Nunito', sans-serif;
   font-weight: 400;
+  font-size: 24px;
 }
 
 .about-me-details {
-  width: 50%;
+  width: 60%;
 }
 
-.skills-list {
+.tech-list {
   display: flex;
   flex-wrap: wrap;
   gap: 50px;
 }
 
-.skill {
+.tech {
   width: 150px;
   display: flex;
   flex-direction: column;
@@ -343,7 +349,7 @@ nav a {
   gap: 25px;
 }
 
-.skill-logo {
+.tech-logo {
   width: 125px;
   height: 125px;
   box-shadow: 0px 9.12096px 9.12096px rgba(8, 163, 230, 0.1), 0px 9.12096px 9.12096px rgba(7, 126, 218, 0.2);
@@ -385,6 +391,15 @@ address a {
   font-size: 28px;
   color: inherit;
   font-style: normal;
+}
+
+.email {
+  all: unset;
+  font-size: 28px;
+  color: inherit;
+  font-style: normal;
+  cursor: pointer;
+  text-decoration: underline;
 }
 
 .social-icon {

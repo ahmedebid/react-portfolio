@@ -24,39 +24,54 @@ export const projectData = [
 
 export const skillsData = [
     {
-        skill: "HTML",
+        tech: "HTML",
         logoImg: "html-logo.png",
         logoColor: "#E44D26",
         logoZoom: "110%"
     },
     {
-        skill: "CSS",
+        tech: "CSS",
         logoImg: "css-logo.png",
         logoColor: "#379AD6",
         logoZoom: "110%"
     },
     {
-        skill: "JavaScript",
+        tech: "JavaScript",
         logoImg: "js-logo.png",
         logoColor: "#F7DF1E",
         logoZoom: "70%"
     },
     {
-        skill: "React",
+        tech: "React",
         logoImg: "react-logo.png",
         logoColor: "#1C1C1C",
         logoZoom: "80%"
-    },
+    }
+];
+
+export const toolsData = [
     {
-        skill: "GitHub",
+        tech: "GitHub",
         logoImg: "github-logo.png",
         logoColor: "#1B1F23",
         logoZoom: "80%"
     },
     {
-        skill: "Jira",
+        tech: "Jira",
         logoImg: "jira-logo.png",
         logoColor: "#F4F5F7",
         logoZoom: "110%"
+    },
+    {
+        tech: "Figma",
+        logoImg: "figma-logo.png",
+        logoColor: "#2C2D33",
+        logoZoom: "110%"
+    },
+    {
+        tech: "VS Code",
+        logoImg: "vscode-logo.png",
+        logoColor: "#2C2C32",
+        logoZoom: "70%"
     }
 ];
