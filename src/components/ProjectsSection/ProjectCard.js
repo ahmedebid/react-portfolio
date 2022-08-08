@@ -22,7 +22,7 @@ export default function Project(props) {
             <div className="project-description">
                 <p>{props.project.descr}</p>
             </div>
-            <div className="project-SS">
+            <div className="project-SS" style={{background: `${props.project.imgBackgroundColor}`}} >
                 <img src={props.project.img} alt="project screenshot"/>
             </div>
             <div className="project-links">

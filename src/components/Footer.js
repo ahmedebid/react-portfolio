@@ -9,7 +9,7 @@ export default function Footer() {
                 <p>Do you have an idea in mind?</p>
                 <div className="catchy-phrase">
                     <p>Let's build it together!</p>
-                    <img src="rocket.png" alt="rocket" width="70" height="70"/>
+                    <img src="rocket.png" alt="rocket" width="40px" height="40px"/>
                 </div>
                 <address>
                     <a className="email" href="mailto:ahmed@ebid.dev">ahmed@ebid.dev</a><br/>

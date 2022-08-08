@@ -12,7 +12,10 @@ const projectCards = projectData.map(project =>
 export default function ProjectsSection() {
     return(
         <section id="projects-sec" className="projects-section">
-            <h2>Latest Projects</h2>
+            <div className="projects-sec-heading">
+                <h2>Latest Projects</h2>
+                <img src="sparkles.png" alt="sparkles" width="60px" height="60px"/>
+            </div>
             <div className="projects-list">
                 {projectCards}
             </div>

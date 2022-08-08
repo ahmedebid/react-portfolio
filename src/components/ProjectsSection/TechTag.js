@@ -10,7 +10,7 @@ export default function TechTag(props) {
         tagColor = "#E34C26";
     } else if (props.tech === "CSS") {
         tagColor = "#214CE5";
-    } else if (props.tech === "JS") {
+    } else if (props.tech === "JavaScript") {
         tagColor = "#FCDC00";
     } else {
         tagColor = "#000";
