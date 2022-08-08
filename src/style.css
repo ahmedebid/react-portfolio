@@ -331,22 +331,26 @@ nav a {
 /* About Me Section */
 
 .about-me-section {
+  margin-bottom: 70px;
+  margin-inline: 100px;
+}
+
+.about-me-details {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  margin-bottom: 70px;
-  margin-inline: 100px;
   gap: 60px;
 }
 
-.about-me-section p {
+.about-me-details p {
   font-family: 'Nunito', sans-serif;
   font-weight: 400;
   font-size: 2.1rem;
 }
 
 .about-me-col-1 {
-  width: 57%;
+  flex-basis: 57%;
+  flex-shrink: 1;
 }
 
 .about-me-col-1 p {
@@ -360,7 +364,7 @@ nav a {
 }
 
 .tech {
-  width: 150px;
+  width: 140px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -382,17 +386,19 @@ nav a {
   justify-content: flex-start;
   align-items: center;
   gap: 100px;
+  flex-basis: 35%;
+  flex-shrink: 1;
 }
 
 .memoji-about {
-  width: 240px;
+  max-width: 240px;
 }
 
-.fun-fact-card {
+.fun-fact-card, .fun-fact-card-small-screen {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 350px;
+  max-width: 350px;
   padding: 20px;
   border: 4px solid #000;
   border-radius: 20px;
@@ -419,16 +425,20 @@ nav a {
   width: 50px;
 }
 
-.fun-fact-card p {
+:where(.fun-fact-card, .fun-fact-card-small-screen) p {
   font-size: 1.8rem;
 }
 
-.fun-fact-card a {
+:where(.fun-fact-card, .fun-fact-card-small-screen) a {
   all: unset;
   cursor: pointer;
   font-weight: 700;
   color: #4D5150;
   text-decoration: underline;
+}
+
+.fun-fact-card-small-screen {
+  display: none;
 }
 
 /* Footer */
@@ -492,4 +502,114 @@ address a {
 
 .memoji-footer {
   width: 250px;
+}
+
+/* First Breakpoint */
+@media only screen and (max-width: 967px) {
+  .about-me-col-1 {
+    flex-basis: 100%;
+    order: 2;
+  }
+
+  .about-me-col-2 {
+    order: 1;
+    flex-direction: row;
+    flex-basis: 100%;
+  }
+
+  .about-me-section h2 {
+    margin-bottom: 30px;
+  }
+}
+
+/* Second Breakpoint */
+@media only screen and (max-width: 835px) {
+
+  h1 {
+    font-size: 4rem;
+  }
+
+  nav {
+    gap: 30px;
+  }
+
+  nav a {
+    font-size: 1.8rem;
+  }
+
+  .hello-phrase {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .hello-phrase h3 {
+    order: 2;
+    font-size: 7rem;
+  }
+
+  .hero-section p {
+    font-size: 3rem;
+    margin-top: 30px;
+    margin-bottom: 50px;
+  }
+
+  .about-me-details {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .fun-fact-card {
+    display: none;
+  }
+
+  .fun-fact-card-small-screen {
+    display: flex;
+    max-width: 100%;
+    margin-top: 30px;
+  }
+
+  .fun-fact-card-small-screen p {
+    margin: 0;
+  }
+
+}
+
+@media only screen and (max-width: 700px) {
+  h1 {
+    font-size: 3rem;
+  }
+
+  nav {
+    gap: 20px;
+  }
+
+  nav a {
+    font-size: 1.6rem;
+  }
+
+  .memoji-hero {
+    width: 200px;
+  }
+
+  .hello-phrase h3 {
+    font-size: 5rem;
+  }
+
+  .hero-section p {
+    font-size: 2.5rem;
+  }
+
+  .hero-buttons {
+    font-size: 1.6rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  /* Add burger menu */
+}
+
+@media only screen and (max-width: 497px) {
+  .tech-list {
+    justify-content: center;
+  }
 }
