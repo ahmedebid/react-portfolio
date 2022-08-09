@@ -1,5 +1,5 @@
 /* -------------------------------------------- */
-/* Reset                                        */
+/* CSS Reset Styles                             */
 /* -------------------------------------------- */
 
 /* Source: https://piccalil.li/blog/a-modern-css-reset/ */
@@ -82,10 +82,8 @@ select {
 
 
 /* -------------------------------------------- */
-/* Styles                                       */
+/* General Styles                               */
 /* -------------------------------------------- */
-
-/* General */
 
 html {
   font-size: 62.5%;
@@ -135,14 +133,14 @@ h6 {
   margin: 0;
 }
 
-/* Underline styles */
+/* Underline animation styles */
 a {
 	display: block;
 	position: relative;
 	padding: 0.2em 0;
 }
 
-/* Fade in */
+/* Underline animation styles: Fade in */
 a::after {
 	content: '';
 	position: absolute;
@@ -161,7 +159,7 @@ a:focus::after {
 	transform: translate3d(0, 0.2em, 0);
 }
 
-/* Slide in */
+/* Underline animation styles: Slide in */
 a {
 	overflow: hidden;
 }
@@ -176,7 +174,10 @@ a:focus::after{
 	transform: translate3d(0, 0, 0);
 }
 
-/* Header */
+
+/* -------------------------------------------- */
+/* Header Styles                                */
+/* -------------------------------------------- */
 
 header {
     display: flex;
@@ -196,7 +197,10 @@ nav a {
   font-size: 2.1rem;
 }
 
-/* Hero Section */
+
+/* -------------------------------------------- */
+/* Hero Section Styles                          */
+/* -------------------------------------------- */
 
 .hero-section {
     display: flex;
@@ -209,7 +213,6 @@ nav a {
     border-radius: 44px;
     padding: 60px 65px;
     margin-inline: 90px;
-    /* gap: 20px; */
 }
 
 .memoji-hero {
@@ -239,6 +242,8 @@ nav a {
 .hero-buttons {
   display: flex;
   align-items: center;
+  justify-content: center;
+  gap: 16px;
   font-size: 1.8rem;
 }
 
@@ -254,10 +259,14 @@ nav a {
   color: #fff;
   cursor: pointer;
   border: none;
-  margin-right: 16px;
 }
 
-/* Projects Section */
+
+/* -------------------------------------------- */
+/* Projects Section Styles                      */
+/* -------------------------------------------- */
+
+/* General */
 
 .projects-section {
   margin-top: 70px;
@@ -265,10 +274,19 @@ nav a {
   margin-inline: 90px;
 }
 
+/* Section Heading */
+
 .projects-sec-heading {
   display: flex;
   gap: 20px;
 }
+
+.sparkles-icon {
+  width: 60px;
+  height: 60px;
+}
+
+/* Projects List */
 
 .projects-list {
   display: flex;
@@ -277,10 +295,11 @@ nav a {
   gap: 40px;
 }
 
+/* Project Card */
+
 .project-card {
   display: flex;
   flex-direction: column;
-  /* justify-content: space-between; */
   align-items: center;
   width: 330px;
   border: 1px solid #000;
@@ -302,6 +321,7 @@ nav a {
 .tech-tag-list {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 10px;
 }
 
@@ -314,7 +334,6 @@ nav a {
 }
 
 .project-SS img {
-  /* border-radius: 10px; */
   width: 80%;
 }
 
@@ -328,11 +347,14 @@ nav a {
   color: inherit;
 }
 
-/* About Me Section */
+
+/* -------------------------------------------- */
+/* About Me Section Styles                      */
+/* -------------------------------------------- */
 
 .about-me-section {
   margin-bottom: 70px;
-  margin-inline: 100px;
+  margin-inline: 90px;
 }
 
 .about-me-details {
@@ -356,7 +378,6 @@ nav a {
 .about-me-col-1 p {
   margin-top: 30px;
 }
-
 
 .tech-list {
   display: flex;
@@ -417,11 +438,10 @@ nav a {
 .fun-fact-heading h5 {
   font-size: 3.5rem;
   font-weight: 400;
-  /* text-decoration: none; */
   margin: 0;
 }
 
-.fun-fact-heading img {
+.cowboy-face-icon {
   width: 50px;
 }
 
@@ -441,12 +461,12 @@ nav a {
   display: none;
 }
 
-/* Footer */
+
+/* -------------------------------------------- */
+/* Footer Styles                                */
+/* -------------------------------------------- */
 
 footer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   background: #111827;
   color: #fff;
   padding: 60px 90px;
@@ -459,6 +479,12 @@ footer p {
   padding: 0;
 }
 
+.contact-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .contact-info {
   display: flex;
   flex-direction: column;
@@ -469,6 +495,11 @@ footer p {
   display: flex;
   align-items: center;
   gap: 20px;
+}
+
+.rocket-icon {
+  width: 40px;
+  height: 40px;
 }
 
 address {
@@ -500,11 +531,17 @@ address a {
   margin-top: 20px;
 }
 
-.memoji-footer {
-  width: 250px;
+.contact-img {
+  flex-basis: 40%;
+  max-width: 250px;
 }
 
-/* First Breakpoint */
+
+/* ------------------------------------------------------ */
+/* Responsiveness Styles - For screen widths below 967px  */
+/* ------------------------------------------------------ */
+
+/* First Breakpoint - below 967px */
 @media only screen and (max-width: 967px) {
   .about-me-col-1 {
     flex-basis: 100%;
@@ -520,13 +557,25 @@ address a {
   .about-me-section h2 {
     margin-bottom: 30px;
   }
+
+  .about-me-details {
+    gap: 30px;
+  }
 }
 
-/* Second Breakpoint */
+/* Second Breakpoint - below 835px */
 @media only screen and (max-width: 835px) {
 
   h1 {
     font-size: 4rem;
+  }
+
+  h2 {
+    font-size: 3.5rem;
+  }
+
+  h4 {
+    font-size: 3rem;
   }
 
   nav {
@@ -556,6 +605,7 @@ address a {
   .about-me-details {
     flex-direction: column;
     align-items: center;
+    gap: 15px;
   }
 
   .fun-fact-card {
@@ -574,7 +624,8 @@ address a {
 
 }
 
-@media only screen and (max-width: 700px) {
+/* Third Breakpoint - below 710px */
+@media only screen and (max-width: 710px) {
   h1 {
     font-size: 3rem;
   }
@@ -602,14 +653,198 @@ address a {
   .hero-buttons {
     font-size: 1.6rem;
   }
+
+  footer p {
+    font-size: 1.8rem;
+  }
+
+  .catchy-phrase {
+    gap: 10px;
+  }
+
+  .email {
+    font-size: 1.8rem;
+  }
+
+  .social-icon {
+    font-size: 3rem;
+  }
 }
 
+/* Fourth Breakpoint - below 600px */
 @media only screen and (max-width: 600px) {
-  /* Add burger menu */
+  header {
+    flex-direction: column;
+    margin: 15px 60px;
+  }
+
+  h1 {
+    font-size: 3.5rem;
+  }
+
+  nav {
+    gap: 35px;
+  }
+
+  nav a {
+    font-size: 1.8rem;
+  }
+
+  .hero-section {
+    margin-inline: 60px;
+    padding: 40px 45px;
+ }
+
+ 
+ .projects-section {
+    margin-inline: 60px;
+ }
+ 
+ .about-me-section {
+    margin-inline: 60px;
+ }
+ 
+ footer {
+    padding: 60px 60px;
+ }
 }
 
-@media only screen and (max-width: 497px) {
+/* Fifth Breakpoint - below 546px */
+@media only screen and (max-width: 546px) {
+  
+  h2 {
+    font-size: 3rem;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+  }
+
+  .sparkles-icon {
+    width: 50px;
+    height: 50px;
+  }
+
+  .projects-sec-heading {
+    gap: 10px;
+  }
+  
+  .contact-img {
+    max-width: 200px;
+    margin-block: 30px;
+  }
+
+  .contact-details {
+    flex-direction: column;
+  }
+
+  .contact-info {
+    order: 2;
+    align-items: center;
+  }
+
+  .social-icon {
+    font-size: 3.7rem;
+  }
+
+  .social-icons-container {
+    gap: 30px;
+  }
+
+}
+
+/* Sixth Breakpoint - below 416px */
+@media only screen and (max-width: 416px) {
+
+  header {
+    margin: 15px 40px;
+  }
+
+  .hero-section {
+    margin-inline: 40px;
+    padding: 30px 35px;
+  }
+
+  .projects-section {
+    margin-inline: 40px;
+  }
+
+  .project-card {
+    padding: 25px;
+  }
+
+  .project-links {
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .about-me-section {
+    margin-inline: 40px;
+  }
+  
+  footer {
+    padding: 40px 40px;
+  }
+
+  .rocket-icon {
+    width: 30px;
+    height: 30px;
+  }
+    
   .tech-list {
     justify-content: center;
+  }
+}
+
+/* Seventh Breakpoint - below 379px */
+@media only screen and (max-width: 379px) {
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  nav {
+    gap: 20px;
+  }
+
+  nav a {
+    font-size: 1.6rem;
+  }
+
+  .memoji-hero {
+    width: 170px;
+  }
+
+  .hero-buttons {
+    font-size: 1.4rem;
+  }
+
+  h2 {
+    font-size: 2.5rem;
+  }
+  
+  .projects-sec-heading {
+    gap: 3px;
+  }
+
+  .sparkles-icon {
+    width: 35px;
+    height: 35px;
+  }
+
+  .memoji-about {
+    width: 200px;
+  }
+
+  .fun-fact-card-small-screen p {
+    font-size: 1.6rem;
+  }
+
+  .fun-fact-card-small-screen h5 {
+    font-size: 3rem;
+  }
+
+  .cowboy-face-icon {
+    width: 40px;
   }
 }

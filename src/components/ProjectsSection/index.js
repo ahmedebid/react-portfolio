@@ -14,7 +14,7 @@ export default function ProjectsSection() {
         <section id="projects-sec" className="projects-section">
             <div className="projects-sec-heading">
                 <h2>Latest Projects</h2>
-                <img src="sparkles.png" alt="sparkles" width="60px" height="60px"/>
+                <img className="sparkles-icon" src="sparkles.png" alt="sparkles"/>
             </div>
             <div className="projects-list">
                 {projectCards}
