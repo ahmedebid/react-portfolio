@@ -10,7 +10,7 @@ export default function HeroSection() {
             </p>
             <div className="hero-buttons">
                 <button onClick={() => document.getElementById("contact-sec").scrollIntoView()} className="hero-contact-btn">Contact</button>
-                <a className="hero-cv-btn" href=".">Download résumé →</a>
+                {/* <a className="hero-cv-btn" href=".">Download resume →</a> */}
             </div>
         </section>
     );
