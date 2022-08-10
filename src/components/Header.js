@@ -7,6 +7,7 @@ export default function Header() {
             <h1><FontAwesomeIcon icon={faCode} /> Ahmed Ebid</h1>
             <nav>
                 <a href="#projects-sec">Projects</a>
+                <a href="#skills">Skills</a>
                 <a href="#about-sec">About</a>
                 <a href="#contact-sec">Contact</a>
             </nav>

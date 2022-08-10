@@ -379,6 +379,10 @@ nav a {
   margin-top: 30px;
 }
 
+.skills-and-tools {
+  margin-top: 60px;
+}
+
 .tech-list {
   display: flex;
   flex-wrap: wrap;
@@ -543,6 +547,19 @@ address a {
 
 /* First Breakpoint - below 967px */
 @media only screen and (max-width: 967px) {
+
+  h1 {
+    font-size: 4rem;
+  }
+
+  nav {
+    gap: 30px;
+  }
+
+  nav a {
+    font-size: 1.8rem;
+  }
+
   .about-me-col-1 {
     flex-basis: 100%;
     order: 2;
@@ -566,24 +583,12 @@ address a {
 /* Second Breakpoint - below 835px */
 @media only screen and (max-width: 835px) {
 
-  h1 {
-    font-size: 4rem;
-  }
-
   h2 {
     font-size: 3.5rem;
   }
 
   h4 {
     font-size: 3rem;
-  }
-
-  nav {
-    gap: 30px;
-  }
-
-  nav a {
-    font-size: 1.8rem;
   }
 
   .hello-phrase {
@@ -624,8 +629,8 @@ address a {
 
 }
 
-/* Third Breakpoint - below 710px */
-@media only screen and (max-width: 710px) {
+/* Third Breakpoint - below 760px */
+@media only screen and (max-width: 760px) {
   h1 {
     font-size: 3rem;
   }
@@ -654,6 +659,10 @@ address a {
     font-size: 1.6rem;
   }
 
+  .skills-and-tools {
+    margin-top: 40px;
+  }
+
   footer p {
     font-size: 1.8rem;
   }
@@ -671,8 +680,8 @@ address a {
   }
 }
 
-/* Fourth Breakpoint - below 600px */
-@media only screen and (max-width: 600px) {
+/* Fourth Breakpoint - below 650px */
+@media only screen and (max-width: 650px) {
   header {
     flex-direction: column;
     margin: 15px 60px;
@@ -728,6 +737,10 @@ address a {
   .projects-sec-heading {
     gap: 10px;
   }
+
+  .skills-and-tools {
+    margin-top: 0px;
+  }
   
   .contact-img {
     max-width: 200px;
@@ -753,8 +766,8 @@ address a {
 
 }
 
-/* Sixth Breakpoint - below 416px */
-@media only screen and (max-width: 416px) {
+/* Sixth Breakpoint - below 480px */
+@media only screen and (max-width: 480px) {
 
   header {
     margin: 15px 40px;
@@ -796,19 +809,35 @@ address a {
   }
 }
 
-/* Seventh Breakpoint - below 379px */
-@media only screen and (max-width: 379px) {
+/* Seventh Breakpoint - below 450px */
+@media only screen and (max-width: 450px) {
 
   h1 {
     font-size: 3rem;
   }
-
+  
   nav {
     gap: 20px;
   }
-
+  
   nav a {
     font-size: 1.6rem;
+  }
+}
+
+/* Eighth Breakpoint - below 379px */
+@media only screen and (max-width: 379px) {
+
+  h1 {
+    font-size: 2.5rem;
+  }
+  
+  nav {
+    gap: 15px;
+  }
+  
+  nav a {
+    font-size: 1.4rem;
   }
 
   .memoji-hero {
