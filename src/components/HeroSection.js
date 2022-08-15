@@ -6,7 +6,7 @@ export default function HeroSection() {
                 <img className="memoji-hero" src="memoji-hero.png" alt="Memoji waving his hands"/>
             </div>
             <p>
-                I'm a <span>front-end engineer</span> who builds responsive, accessible, and performant user experiences on the web.
+                I'm a <span>front-end developer</span> who builds responsive, accessible, and performant user experiences on the web.
             </p>
             <div className="hero-buttons">
                 <button onClick={() => document.getElementById("contact-sec").scrollIntoView()} className="hero-contact-btn">Contact</button>

@@ -526,12 +526,12 @@ address a {
 }
 
 .social-icon {
-  font-size: 4rem;
+  font-size: 4.5rem;
 }
 
 .social-icons-container {
   display: flex;
-  gap: 40px;
+  gap: 80px;
   margin-top: 20px;
 }
 
@@ -676,7 +676,11 @@ address a {
   }
 
   .social-icon {
-    font-size: 3rem;
+    font-size: 4rem;
+  }
+
+  .social-icons-container {
+    gap: 70px;
   }
 }
 
@@ -754,14 +758,6 @@ address a {
   .contact-info {
     order: 2;
     align-items: center;
-  }
-
-  .social-icon {
-    font-size: 3.7rem;
-  }
-
-  .social-icons-container {
-    gap: 30px;
   }
 
 }
