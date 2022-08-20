@@ -243,7 +243,7 @@ nav a {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 16px;
+  gap: 40px;
   font-size: 1.8rem;
 }
 
@@ -731,6 +731,7 @@ address a {
 
   .hero-buttons {
     flex-direction: column;
+    gap: 30px;
   }
 
   .sparkles-icon {
