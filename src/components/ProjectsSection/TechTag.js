@@ -4,7 +4,7 @@ export default function TechTag(props) {
 
     if (props.tech === "React") {
         tagColor = "#044662";
-    } else if (props.tech === "Rest API") {
+    } else if (props.tech === "REST API") {
         tagColor = "#004E04";
     } else if (props.tech === "HTML") {
         tagColor = "#7A2510";

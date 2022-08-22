@@ -9,7 +9,7 @@ export const projectData = [
     },
     {
         name: "Memezoo",
-        techStack: ["React", "Rest API"],
+        techStack: ["React", "REST API"],
         githubRepo: "memezoo",
         img: "memezoo-screenshot.png",
         imgBackgroundColor: "#3E2A35",
@@ -25,7 +25,7 @@ export const projectData = [
     },
     {
         name: "Eavesdropper",
-        techStack: ["HTML", "CSS", "JavaScript"],
+        techStack: ["HTML", "CSS", "JavaScript", "REST API"],
         githubRepo: "eavesdropper",
         img: "eavesdropper-screenshot.png",
         imgBackgroundColor: "#E5E5E5",
