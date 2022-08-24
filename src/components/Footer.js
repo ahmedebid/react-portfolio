@@ -13,7 +13,7 @@ export default function Footer() {
                         <img className="rocket-icon" src="rocket.png" alt="rocket"/>
                     </div>
                     <address>
-                        <a className="email" href="mailto:ahmed-ebid@outlook.com">ahmed-ebid@outlook.com</a><br/>
+                        <a className="email" href="mailto:ahmed.ebid.dev@gmail.com">ahmed.ebid.dev@gmail.com</a><br/>
                         <div className="social-icons-container">
                             <a href="https://twitter.com/ebid33" target="_blank" rel="noreferrer noopener">
                                 <FontAwesomeIcon className="social-icon" icon={faSquareTwitter} />
