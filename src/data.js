@@ -5,7 +5,7 @@ export const projectData = [
         githubRepo: "noto",
         img: "noto-screenshot.png",
         imgBackgroundColor: "#393939",
-        descr: "A markdown-based note taking app built using React."
+        descr: "A markdown-based note-taking app built using React."
     },
     {
         name: "Memezoo",
