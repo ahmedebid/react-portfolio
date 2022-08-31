@@ -1,7 +1,7 @@
 export const projectData = [
     {
         name: "Noto",
-        techStack: ["React"],
+        techStack: ["JSX", "CSS", "JavaScript", "React"],
         githubRepo: "noto",
         img: "noto-screenshot.png",
         imgBackgroundColor: "#393939",
@@ -9,7 +9,7 @@ export const projectData = [
     },
     {
         name: "Memezoo",
-        techStack: ["React", "REST API"],
+        techStack: ["JSX", "CSS", "JavaScript", "React", "REST API"],
         githubRepo: "memezoo",
         img: "memezoo-screenshot.png",
         imgBackgroundColor: "#3E2A35",
@@ -17,7 +17,7 @@ export const projectData = [
     },
     {
         name: "Tenzi",
-        techStack: ["React"],
+        techStack: ["JSX", "CSS", "JavaScript", "React"],
         githubRepo: "tenzi-game",
         img: "tenzi-game-screenshot.png",
         imgBackgroundColor: "#4D9078",
