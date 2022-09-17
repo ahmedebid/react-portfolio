@@ -24,7 +24,7 @@ export default function HeroSection() {
         </button>
         <a
           className="hero-cv-btn"
-          href="https://drive.google.com/file/d/1PzVX9TTJWQ_XMLLuE6c02eF9pUtoLfkn/view?usp=sharing"
+          href="https://drive.google.com/file/d/1e3JmfIGhDVfuP3UgkQp89wNEc_l6x1y9/view?usp=sharing"
           target="_blank"
           rel="noreferrer noopener"
         >
